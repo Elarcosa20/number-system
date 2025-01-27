@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+   <link rel="stylesheet" href="style/style.css">
+   <title>Document</title>
+</head>
+<body>
+    <div class="cont container-fluid mt-3">
+      <img src="img/logo.png" alt="" class="logo">
+      
+      <div class="title">Number System Conversion</div><br><br>
+
+      <h3>FROM:</h3>
+      <select name="option1" id="numsysOpt1" class="form">
+         <option value="binary">Binary</option>
+         <option value="decimal">Decimal</option>
+         <option value="octal">Octal</option>
+         <option value="hexadecimal">Hexadecimal</option>
+       </select>
+        <h3>TO:</h3>
+        <select name="option2" id="numsysOpt2" class="form">
+         <option value="binary">Binary</option>
+         <option value="decimal">Decimal</option>
+         <option value="octal">Octal</option>
+         <option value="hexadecimal">Hexadecimal</option>
+        </select>
+        <br><br>
+        <input type="text" id="Uinput" placeholder="Input number to convert" required><br><br><br>
+
+        <input id="result" placeholder="Conversion Result" class="form-control-sm" disabled><br><br>
+        <button class="btn btn-info mt-2 d-inline" onclick="convertbtn()">Convert</button>
+        <button class="btn btn-info mt-2 d-inline" onclick="resetbtn()">Reset</button>
+    </div>
+    
+     
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="js/index.js"></script>
+</body>
+</html>
